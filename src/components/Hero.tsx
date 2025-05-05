@@ -1,5 +1,5 @@
 import { Button } from "./ui/button";
-import { HeroCards } from "./HeroCards";
+import productHero from "../assets/productHero.png";
 
 export const Hero = () => {
   return (
@@ -9,9 +9,10 @@ export const Hero = () => {
           <h1 className="inline">
             <span className="inline bg-gradient-to-r from-[#F596D3]  to-[#D247BF] text-transparent bg-clip-text">
               Flash Golf.
-            </span>{" "}
-          </h1>{" "}
-          <h2 className="inline text-3xl">Virtual Golf, Real Fun, Anywhere.</h2>
+            </span>
+          </h1>
+          <br />
+          <h2 className="inline text-3xl">Virtual Golf in a Flash.</h2>
         </main>
         <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
           Flash Golf brings the thrill of virtual golf to events in Edmonton
@@ -21,12 +22,10 @@ export const Hero = () => {
           <Button className="w-full md:w-1/3">Get Started</Button>
         </div>
       </div>
-
       {/* Hero cards sections */}
       <div className="z-10">
-        <HeroCards />
+        <img src={productHero} alt="Product Hero" className="h-full" />
       </div>
-
       {/* Shadow effect */}
       <div className="shadow"></div>
     </section>
