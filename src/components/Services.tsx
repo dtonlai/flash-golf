@@ -1,5 +1,4 @@
 import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card";
-import cubeLeg from "../assets/cube-leg.png";
 import services from "../assets/services.png";
 import { RiBox2Fill, RiGolfBallFill, RiTruckFill } from "react-icons/ri";
 

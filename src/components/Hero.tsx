@@ -1,5 +1,3 @@
-import { Button } from "./ui/button";
-import { CalendarIcon } from "@radix-ui/react-icons";
 import productHero from "../assets/productHero.png";
 import { BookNowButton } from "./ui/shared/BookNowButton";
 
