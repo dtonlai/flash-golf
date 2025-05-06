@@ -6,9 +6,14 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import image from "../assets/growth.png";
-import image3 from "../assets/reflecting.png";
-import image4 from "../assets/looking-ahead.png";
+// import image from "../assets/growth.png";
+// import image3 from "../assets/reflecting.png";
+// import image4 from "../assets/looking-ahead.png";
+// import excitingGameplay from "../assets/excitingGameplay.webp";
+// import compactAndFlexible from "../assets/compactAndFlexible.webp";
+import quick from "../assets/quick.jpg";
+import exciting from "../assets/exciting.png";
+import compact from "../assets/compact.jpg";
 
 interface FeatureProps {
   title: string;
@@ -18,57 +23,51 @@ interface FeatureProps {
 
 const features: FeatureProps[] = [
   {
-    title: "Responsive Design",
+    title: "Quick and easy setup",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
-    image: image4,
+      "Our team sets up the golf simulator in just 30 minutes, so you can start enjoying the fun without delay.",
+    image: quick,
   },
   {
-    title: "Intuitive user interface",
+    title: "Exciting gameplay",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
-    image: image3,
+      "Choose from a variety of game modes, including course play, driving range, mini-games — perfect for all skill levels.",
+    image: exciting,
   },
   {
-    title: "AI-Powered insights",
+    title: "Compact and flexible",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
-    image: image,
+      "Designed to fit almost anywhere, all you need is a power outlet, and we’ll handle the rest!",
+    image: compact,
   },
 ];
 
 const featureList: string[] = [
-  "Dark/Light theme",
-  "Reviews",
-  "Features",
-  "Pricing",
-  "Contact form",
-  "Our team",
-  "Responsive design",
-  "Newsletter",
-  "Minimalist",
+  // "Dark/Light theme",
+  // "Reviews",
+  // "Features",
+  // "Pricing",
+  // "Contact form",
+  // "Our team",
+  // "Responsive design",
+  // "Newsletter",
+  // "Minimalist",
 ];
 
 export const Features = () => {
   return (
-    <section
-      id="features"
-      className="container py-24 sm:py-32 space-y-8"
-    >
+    <section id="features" className="container py-24 sm:py-32 space-y-8">
       <h2 className="text-3xl lg:text-4xl font-bold md:text-center">
-        Many{" "}
+        {" "}
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-          Great Features
+          Features
         </span>
       </h2>
 
       <div className="flex flex-wrap md:justify-center gap-4">
         {featureList.map((feature: string) => (
           <div key={feature}>
-            <Badge
-              variant="secondary"
-              className="text-sm"
-            >
+            <Badge variant="secondary" className="text-sm">
               {feature}
             </Badge>
           </div>
@@ -77,7 +76,7 @@ export const Features = () => {
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {features.map(({ title, description, image }: FeatureProps) => (
-          <Card key={title}>
+          <Card className="flex flex-col justify-between" key={title}>
             <CardHeader>
               <CardTitle>{title}</CardTitle>
             </CardHeader>

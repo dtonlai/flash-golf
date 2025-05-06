@@ -1,5 +1,7 @@
 import { Button } from "./ui/button";
+import { CalendarIcon } from "@radix-ui/react-icons";
 import productHero from "../assets/productHero.png";
+import { BookNowButton } from "./ui/shared/BookNowButton";
 
 export const Hero = () => {
   return (
@@ -18,8 +20,8 @@ export const Hero = () => {
           Flash Golf brings the thrill of virtual golf to events in Edmonton
           with quick setup and unforgettable fun—anytime, anywhere.
         </p>
-        <div className="space-y-4 md:space-y-0 md:space-x-4">
-          <Button className="w-full md:w-1/3">Get Started</Button>
+        <div className="space-y-4 md:space-y-0 md:space-x-4 xs:w-full md:w-1/3">
+          <BookNowButton />
         </div>
       </div>
       {/* Hero cards sections */}

@@ -24,16 +24,16 @@ interface RouteProps {
 
 const routeList: RouteProps[] = [
   {
+    href: "#howItWorks",
+    label: "How it works",
+  },
+  {
+    href: "#features",
+    label: "Features",
+  },
+  {
     href: "#services",
     label: "Services",
-  },
-  // {
-  //   href: "#testimonials",
-  //   label: "Testimonials",
-  // },
-  {
-    href: "#pricing",
-    label: "Pricing",
   },
   {
     href: "#faq",
@@ -75,7 +75,7 @@ export const Navbar = () => {
               <SheetContent side={"left"}>
                 <SheetHeader>
                   <SheetTitle className="font-bold text-xl">
-                    Shadcn/React
+                    Flash Golf
                   </SheetTitle>
                 </SheetHeader>
                 <nav className="flex flex-col justify-center items-center gap-2 mt-4">
@@ -94,11 +94,11 @@ export const Navbar = () => {
                     rel="noreferrer noopener"
                     href="#"
                     target="_blank"
-                    className={`w-[110px] border ${buttonVariants({
+                    className={`w-full flex gap-2 border ${buttonVariants({
                       variant: "secondary",
                     })}`}
                   >
-                    <CalendarIcon className="mr-2 w-5 h-5" />
+                    <CalendarIcon className="text-4xl" />
                     Book now
                   </a>
                 </nav>
