@@ -1,6 +1,11 @@
 import { LogoIcon } from "./Icons";
+import { FaInstagram, FaFacebook } from "react-icons/fa6";
+import Brand from "./ui/shared/Brand";
+import { useTheme } from "./theme-provider";
 
 export const Footer = () => {
+  const theme = useTheme();
+
   return (
     <footer id="footer">
       <hr className="w-11/12 mx-auto" />
@@ -12,20 +17,19 @@ export const Footer = () => {
             href="/"
             className="font-bold text-xl flex"
           >
-            <LogoIcon />
-            ShadcnUI/React
+            <Brand />
           </a>
         </div>
 
-        <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">Follow US</h3>
+        <div className="flex flex-col gap-2 text-2xl">
+          <h3 className="font-bold text-lg">Follow us</h3>
           <div>
             <a
               rel="noreferrer noopener"
               href="#"
               className="opacity-60 hover:opacity-100"
             >
-              Github
+              <FaInstagram />
             </a>
           </div>
 
@@ -35,22 +39,12 @@ export const Footer = () => {
               href="#"
               className="opacity-60 hover:opacity-100"
             >
-              Twitter
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Dribbble
+              <FaFacebook />
             </a>
           </div>
         </div>
 
-        <div className="flex flex-col gap-2">
+        {/* <div className="flex flex-col gap-2">
           <h3 className="font-bold text-lg">Platforms</h3>
           <div>
             <a
@@ -81,14 +75,14 @@ export const Footer = () => {
               Desktop
             </a>
           </div>
-        </div>
+        </div> */}
 
         <div className="flex flex-col gap-2">
           <h3 className="font-bold text-lg">About</h3>
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="#features"
               className="opacity-60 hover:opacity-100"
             >
               Features
@@ -98,7 +92,7 @@ export const Footer = () => {
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="#services"
               className="opacity-60 hover:opacity-100"
             >
               Pricing
@@ -108,15 +102,15 @@ export const Footer = () => {
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="https://form.jotform.com/251258069358263"
               className="opacity-60 hover:opacity-100"
             >
-              FAQ
+              Book now
             </a>
           </div>
         </div>
 
-        <div className="flex flex-col gap-2">
+        {/* <div className="flex flex-col gap-2">
           <h3 className="font-bold text-lg">Community</h3>
           <div>
             <a
@@ -147,11 +141,11 @@ export const Footer = () => {
               Twitch
             </a>
           </div>
-        </div>
+        </div> */}
       </section>
 
       <section className="container pb-14 text-center">
-        <h3>
+        {/* <h3>
           &copy; 2024 Landing page made by{" "}
           <a
             rel="noreferrer noopener"
@@ -161,7 +155,20 @@ export const Footer = () => {
           >
             Leo Miranda
           </a>
-        </h3>
+        </h3> */}
+        <div className="flex justify-center py-4 items-center">
+          <p>&copy;</p>
+          <div className="flex items-center justify-center space-x-2">
+            <a
+              style={{ fontWeight: "normal", textDecoration: "underline" }}
+              href="/"
+            >
+              flashgolf.ca
+            </a>
+            <span>{new Date().getFullYear()}.</span>
+            <span>All rights reserved.</span>
+          </div>
+        </div>
       </section>
     </footer>
   );

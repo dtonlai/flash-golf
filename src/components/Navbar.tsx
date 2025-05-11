@@ -12,10 +12,11 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 
-import { LightningBoltIcon, CalendarIcon } from "@radix-ui/react-icons";
+import { CalendarIcon } from "@radix-ui/react-icons";
 import { buttonVariants } from "./ui/button";
 import { Menu } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
+import Brand from "./ui/shared/Brand";
 
 interface RouteProps {
   href: string;
@@ -35,14 +36,11 @@ const routeList: RouteProps[] = [
     href: "#services",
     label: "Services",
   },
-  {
-    href: "#faq",
-    label: "FAQ",
-  },
 ];
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+
   return (
     <header className="sticky border-b-[1px] top-0 z-40 w-full bg-white dark:border-b-slate-700 dark:bg-background">
       <NavigationMenu className="mx-auto">
@@ -50,11 +48,10 @@ export const Navbar = () => {
           <NavigationMenuItem className="font-bold flex">
             <a
               rel="noreferrer noopener"
-              href="/"
-              className="ml-2 font-bold text-xl flex"
+              href="#"
+              className="ml-2 font-bold text-xl flex items-center"
             >
-              <LightningBoltIcon />
-              Flash Golf
+              <Brand />
             </a>
           </NavigationMenuItem>
 
@@ -92,7 +89,7 @@ export const Navbar = () => {
                   ))}
                   <a
                     rel="noreferrer noopener"
-                    href="#"
+                    href="https://form.jotform.com/251258069358263"
                     target="_blank"
                     className={`w-full flex gap-2 border ${buttonVariants({
                       variant: "secondary",
@@ -125,7 +122,7 @@ export const Navbar = () => {
           <div className="hidden md:flex gap-2">
             <a
               rel="noreferrer noopener"
-              href="https://github.com/leoMirandaa/shadcn-landing-page.git"
+              href="https://form.jotform.com/251258069358263"
               target="_blank"
               className={`border ${buttonVariants({ variant: "secondary" })}`}
             >
