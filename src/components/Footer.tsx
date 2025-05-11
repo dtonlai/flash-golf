@@ -1,11 +1,7 @@
-import { LogoIcon } from "./Icons";
 import { FaInstagram, FaFacebook } from "react-icons/fa6";
 import Brand from "./ui/shared/Brand";
-import { useTheme } from "./theme-provider";
 
 export const Footer = () => {
-  const theme = useTheme();
-
   return (
     <footer id="footer">
       <hr className="w-11/12 mx-auto" />
