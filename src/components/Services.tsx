@@ -85,7 +85,7 @@ export const Services = () => {
             services
           </h2>
           <p className="text-muted-foreground text-xl mt-4 mb-8 ">
-            $200 per hour, minimum 4 hours. Anywhere in Edmonton.
+            $200 per hour, minimum 4 hours. Anywhere in the Edmonton area.
           </p>
 
           <div className="flex flex-col gap-8">

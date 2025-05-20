@@ -10,7 +10,7 @@ export const Footer = () => {
         <div className="col-span-full xl:col-span-2">
           <a
             rel="noreferrer noopener"
-            href="/"
+            href="https://www.flashgolf.ca"
             className="font-bold text-xl flex"
           >
             <Brand />
@@ -157,7 +157,7 @@ export const Footer = () => {
           <div className="flex items-center justify-center space-x-2">
             <a
               style={{ fontWeight: "normal", textDecoration: "underline" }}
-              href="/"
+              href="https://www.flashgolf.ca"
             >
               flashgolf.ca
             </a>

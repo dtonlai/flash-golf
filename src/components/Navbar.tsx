@@ -48,7 +48,7 @@ export const Navbar = () => {
           <NavigationMenuItem className="font-bold flex">
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="https://www.flashgolf.ca"
               className="ml-2 font-bold text-xl flex items-center"
             >
               <Brand />
