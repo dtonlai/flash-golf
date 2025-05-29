@@ -12,7 +12,7 @@ export const Hero = () => {
             </span>
           </h1>
           <br />
-          <h2 className="inline text-3xl">Virtual Golf in a Flash.</h2>
+          <h2 className="inline text-3xl">Virtual golf rentals in a Flash.</h2>
         </main>
         <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
           Flash Golf brings the thrill of virtual golf to events in Edmonton
@@ -24,7 +24,11 @@ export const Hero = () => {
       </div>
       {/* Hero cards sections */}
       <div className="z-10">
-        <img src={productHero} alt="Product Hero" className="w-full" />
+        <img
+          src={productHero}
+          alt="Virtual golf rentals in Edmonton"
+          className="w-full"
+        />
       </div>
       {/* Shadow effect */}
       <div className="shadow"></div>
