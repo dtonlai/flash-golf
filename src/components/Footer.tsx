@@ -22,7 +22,7 @@ export const Footer = () => {
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="https://www.instagram.com/flashgolfyeg/"
               className="opacity-60 hover:opacity-100"
             >
               <FaInstagram />
@@ -32,7 +32,7 @@ export const Footer = () => {
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="https://www.facebook.com/profile.php?id=61577025448766"
               className="opacity-60 hover:opacity-100"
             >
               <FaFacebook />

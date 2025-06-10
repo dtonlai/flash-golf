@@ -23,7 +23,7 @@ const features: FeatureProps[] = [
     icon: <MdBolt className="text-4xl" />,
     title: "Quick and easy setup",
     description:
-      "Our team arrives with everything needed and sets up the golf simulator in minutes.",
+      "Our team arrives with everything needed and sets up in less than an hour before your event starts.",
   },
   {
     icon: <MdSportsGolf className="text-4xl" />,

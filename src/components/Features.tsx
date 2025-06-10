@@ -25,7 +25,7 @@ const features: FeatureProps[] = [
   {
     title: "Quick and easy setup",
     description:
-      "Our team sets up the golf simulator in just 30 minutes, so you can start enjoying the fun without delay.",
+      "Our team sets up the golf simulator in less than an hour, so you can start enjoying the fun without delay.",
     image: quick,
   },
   {
